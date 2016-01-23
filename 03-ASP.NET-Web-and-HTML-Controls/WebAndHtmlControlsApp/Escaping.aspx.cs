@@ -9,5 +9,11 @@ namespace WebAndHtmlControlsApp
         {
 
         }
+
+        protected void SubmitButton_Click(object sender, EventArgs e)
+        {
+            this.ResultLabel.Text = Server.HtmlEncode(this.InputTextBox.Text);
+            this.ResultTextBox.Text = Server.HtmlEncode(this.InputTextBox.Text);
+        }
     }
 }
