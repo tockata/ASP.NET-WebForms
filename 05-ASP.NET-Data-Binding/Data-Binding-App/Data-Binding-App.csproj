@@ -211,6 +211,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="EmpDetails.aspx" />
+    <Content Include="Employees.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="NorthwindEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -422,8 +424,22 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EmpDetails.aspx.cs">
+      <DependentUpon>EmpDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpDetails.aspx.designer.cs">
+      <DependentUpon>EmpDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs">
       <DependentUpon>NorthwindEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.aspx.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employees.aspx.designer.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
