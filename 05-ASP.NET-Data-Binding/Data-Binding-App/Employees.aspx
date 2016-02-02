@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Employees.aspx.cs" Inherits="Data_Binding_App.Employees" %>
+﻿<%@ Page Title="Employees" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Employees.aspx.cs" Inherits="Data_Binding_App.Employees" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h3>Employees</h3>
@@ -36,4 +36,22 @@
             <asp:Label ID="lbPhone" runat="server">Home phone: <%#: Item.HomePhone %></asp:Label>
         </ItemTemplate>
     </asp:FormView>
+    <hr />
+    <h3>All employees in Repeater</h3>
+    <asp:Repeater ID="repeaterAllEmployees" runat="server"
+        SelectMethod="gvEmployees_GetData"
+        ItemType="Data_Binding_App.Employee">
+        <ItemTemplate>
+            <p><%#: Item.FirstName + " " + Item.LastName %></p>
+        </ItemTemplate>
+    </asp:Repeater>
+    <hr />
+    <h3>All employees in ListView</h3>
+    <asp:ListView ID="lvAllEmployees" runat="server"
+        ItemType="Data_Binding_App.Employee"
+        SelectMethod="gvEmployees_GetData">
+        <ItemTemplate>
+            <p><%#: Item.FirstName + " " + Item.LastName %></p>
+        </ItemTemplate>
+    </asp:ListView>
 </asp:Content>
