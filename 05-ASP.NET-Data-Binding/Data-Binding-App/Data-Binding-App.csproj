@@ -234,6 +234,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="XmlTreeView.aspx" />
     <EntityDeploy Include="NorthwindEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>NorthwindEntities.Designer.cs</LastGenOutput>
@@ -505,6 +506,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="XmlTreeView.aspx.cs">
+      <DependentUpon>XmlTreeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XmlTreeView.aspx.designer.cs">
+      <DependentUpon>XmlTreeView.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
