@@ -11,6 +11,13 @@ body {
     padding-right: 15px;
 }
 
+#detailed-data {
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    border: 1px solid black;
+}
+
 /* Override the default bootstrap behavior where horizontal description lists
    will truncate terms that are too long to fit in the left column
 */

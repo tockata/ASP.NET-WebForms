@@ -214,6 +214,8 @@
     </Content>
     <Content Include="EmpDetails.aspx" />
     <Content Include="Employees.aspx" />
+    <Content Include="EmployeeService.asmx" />
+    <Content Include="EmployeesInfo.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="NorthwindEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -235,6 +237,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\Custom\EmployeeDetails.js" />
     <Content Include="XmlTreeView.aspx" />
     <EntityDeploy Include="NorthwindEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -443,12 +446,25 @@
     <Compile Include="Employees.aspx.designer.cs">
       <DependentUpon>Employees.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeService.asmx.cs">
+      <DependentUpon>EmployeeService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmployeesInfo.aspx.cs">
+      <DependentUpon>EmployeesInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeesInfo.aspx.designer.cs">
+      <DependentUpon>EmployeesInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DetailedEmployeeInfo.cs" />
     <Compile Include="Models\Extra.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Producer.cs" />
+    <Compile Include="Models\ShortEmployeeInfo.cs" />
     <Compile Include="NorthwindEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

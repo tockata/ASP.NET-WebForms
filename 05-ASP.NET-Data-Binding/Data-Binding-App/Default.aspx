@@ -6,5 +6,6 @@
         <h3><a runat="server" href="~/Cars">01. Cars</a></h3>
         <h3><a runat="server" href="~/Employees">02. Employees</a></h3>
         <h3><a runat="server" href="~/XmlTreeView">03. XML file in TreeView</a></h3>
+        <h3><a runat="server" href="~/EmployeesInfo">04. Employees info table</a></h3>
     </div>
 </asp:Content>
